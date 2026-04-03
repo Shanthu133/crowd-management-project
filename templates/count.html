@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Passenger Count</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Passenger Count</h1>
+
+<h2>{{ count }}</h2>
+
+<form method="POST">
+    <button type="submit" name="action" value="add">Add Passenger</button>
+    <button type="submit" name="action" value="ticket">Ticket Taken</button>
+</form>
+
+<a href="/home">Back to Home</a>
+
+</body>
+</html>
